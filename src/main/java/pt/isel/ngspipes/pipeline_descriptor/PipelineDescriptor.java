@@ -13,6 +13,22 @@ public class PipelineDescriptor implements IPipelineDescriptor {
     @Override public String getName() { return this.name; }
     public void setName(String name) { this.name = name; }
 
+    private String description;
+    @Override public String getDescription() { return this.description; }
+    public void setDescription(String description) { this.description = description; }
+
+    private String author;
+    @Override public String getAuthor() { return this.author; }
+    public void setAuthor(String author) { this.author = author; }
+
+    private String version;
+    @Override public String getVersion(){ return this.version; }
+    public void setVersion(String version){ this.version = version; }
+
+    private Collection<String> documentation;
+    @Override public Collection<String> getDocumentation(){ return this.documentation; }
+    public void setDocumentation(Collection<String> documentation){ this.documentation = documentation; }
+
     private String logo;
     @Override public String getLogo() { return this.logo; }
     public void setLogo(String logo) { this.logo = logo; }
@@ -37,12 +53,20 @@ public class PipelineDescriptor implements IPipelineDescriptor {
 
     public PipelineDescriptor(
         String name,
+        String description,
+        String author,
+        String version,
+        Collection<String> documentation,
         String logo,
         Collection<IParameterDescriptor> parameters,
         Collection<IOutputDescriptor> outputs,
         Collection<IRepositoryDescriptor> repositories,
         Collection<IStepDescriptor> steps) {
         this.name = name;
+        this.description = description;
+        this.author= author;
+        this.version = version;
+        this.documentation = documentation;
         this.logo = logo;
         this.parameters = parameters;
         this.outputs = outputs;

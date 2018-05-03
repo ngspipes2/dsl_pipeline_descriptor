@@ -11,6 +11,14 @@ public interface IPipelineDescriptor {
 
     String getName();
 
+    String getAuthor();
+
+    String getDescription();
+
+    String getVersion();
+
+    Collection<String> getDocumentation();
+
     String getLogo();
 
     Collection<IParameterDescriptor> getParameters();
