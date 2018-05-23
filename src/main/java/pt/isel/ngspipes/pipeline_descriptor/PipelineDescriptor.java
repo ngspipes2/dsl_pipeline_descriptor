@@ -29,9 +29,9 @@ public class PipelineDescriptor implements IPipelineDescriptor {
     @Override public Collection<String> getDocumentation(){ return this.documentation; }
     public void setDocumentation(Collection<String> documentation){ this.documentation = documentation; }
 
-    private String logo;
-    @Override public String getLogo() { return this.logo; }
-    public void setLogo(String logo) { this.logo = logo; }
+    private byte[] logo;
+    @Override public byte[] getLogo() { return this.logo; }
+    public void setLogo(byte[] logo) { this.logo = logo; }
 
     private Collection<IParameterDescriptor> parameters;
     @Override public Collection<IParameterDescriptor> getParameters() { return this.parameters; }
@@ -57,7 +57,7 @@ public class PipelineDescriptor implements IPipelineDescriptor {
         String author,
         String version,
         Collection<String> documentation,
-        String logo,
+        byte[] logo,
         Collection<IParameterDescriptor> parameters,
         Collection<IOutputDescriptor> outputs,
         Collection<IRepositoryDescriptor> repositories,

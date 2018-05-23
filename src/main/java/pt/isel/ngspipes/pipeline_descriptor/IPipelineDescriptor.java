@@ -19,7 +19,7 @@ public interface IPipelineDescriptor {
 
     Collection<String> getDocumentation();
 
-    String getLogo();
+    byte[] getLogo();
 
     Collection<IParameterDescriptor> getParameters();
 
