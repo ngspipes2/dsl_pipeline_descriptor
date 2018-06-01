@@ -4,7 +4,7 @@ public class ParameterInputDescriptor extends InputDescriptor implements IParame
 
     private String parameterName;
     @Override public String getParameterName() { return this.parameterName; }
-    public void setParameterName(String parameterName) { this.parameterName = parameterName; }
+    @Override public void setParameterName(String parameterName) { this.parameterName = parameterName; }
 
 
 

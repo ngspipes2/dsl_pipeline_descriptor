@@ -4,7 +4,7 @@ public class InputStrategyDescriptor extends StrategyDescriptor implements IInpu
 
     private String inputName;
     @Override public String getInputName() { return this.inputName; }
-    public void setInputName(String inputName) { this.inputName = inputName; }
+    @Override public void setInputName(String inputName) { this.inputName = inputName; }
 
 
 

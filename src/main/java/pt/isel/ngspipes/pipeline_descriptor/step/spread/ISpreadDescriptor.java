@@ -8,7 +8,9 @@ import java.util.Collection;
 public interface ISpreadDescriptor {
 
     Collection<String> getInputsToSpread();
+    void setInputsToSpread(Collection<String> inputsToSpread);
 
     ICombineStrategyDescriptor getStrategy();
+    void setStrategy(ICombineStrategyDescriptor strategy);
 
 }

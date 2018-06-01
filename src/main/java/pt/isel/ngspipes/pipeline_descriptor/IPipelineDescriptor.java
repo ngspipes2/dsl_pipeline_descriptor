@@ -10,23 +10,33 @@ import java.util.Collection;
 public interface IPipelineDescriptor {
 
     String getName();
-
-    String getAuthor();
+    void setName(String name);
 
     String getDescription();
+    void setDescription(String description);
+
+    String getAuthor();
+    void setAuthor(String author);
 
     String getVersion();
+    void setVersion(String version);
 
     Collection<String> getDocumentation();
+    void setDocumentation(Collection<String> documentation);
 
     byte[] getLogo();
+    void setLogo(byte[] logo);
 
     Collection<IParameterDescriptor> getParameters();
+    void setParameters(Collection<IParameterDescriptor> parameters);
 
     Collection<IOutputDescriptor> getOutputs();
+    void setOutputs(Collection<IOutputDescriptor> outputs);
 
     Collection<IRepositoryDescriptor> getRepositories();
-
+    void setRepositories(Collection<IRepositoryDescriptor> repositories);
+    
     Collection<IStepDescriptor> getSteps();
+    void setSteps(Collection<IStepDescriptor> steps);
 
 }

@@ -4,11 +4,11 @@ public class CombineStrategyDescriptor extends StrategyDescriptor implements ICo
 
     private IStrategyDescriptor firstStrategy;
     @Override public IStrategyDescriptor getFirstStrategy() { return this.firstStrategy; }
-    public void setFirstStrategy(IStrategyDescriptor firstStrategy) { this.firstStrategy = firstStrategy; }
+    @Override public void setFirstStrategy(IStrategyDescriptor firstStrategy) { this.firstStrategy = firstStrategy; }
 
     private IStrategyDescriptor secondStrategy;
     @Override public IStrategyDescriptor getSecondStrategy() { return this.secondStrategy; }
-    public void setSecondStrategy(IStrategyDescriptor secondStrategy) { this.secondStrategy = secondStrategy; }
+    @Override public void setSecondStrategy(IStrategyDescriptor secondStrategy) { this.secondStrategy = secondStrategy; }
 
 
 

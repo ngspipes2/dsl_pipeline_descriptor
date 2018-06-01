@@ -11,43 +11,43 @@ public class PipelineDescriptor implements IPipelineDescriptor {
 
     private String name;
     @Override public String getName() { return this.name; }
-    public void setName(String name) { this.name = name; }
+    @Override public void setName(String name) { this.name = name; }
 
     private String description;
     @Override public String getDescription() { return this.description; }
-    public void setDescription(String description) { this.description = description; }
+    @Override public void setDescription(String description) { this.description = description; }
 
     private String author;
     @Override public String getAuthor() { return this.author; }
-    public void setAuthor(String author) { this.author = author; }
+    @Override public void setAuthor(String author) { this.author = author; }
 
     private String version;
     @Override public String getVersion(){ return this.version; }
-    public void setVersion(String version){ this.version = version; }
+    @Override public void setVersion(String version){ this.version = version; }
 
     private Collection<String> documentation;
     @Override public Collection<String> getDocumentation(){ return this.documentation; }
-    public void setDocumentation(Collection<String> documentation){ this.documentation = documentation; }
+    @Override public void setDocumentation(Collection<String> documentation){ this.documentation = documentation; }
 
     private byte[] logo;
     @Override public byte[] getLogo() { return this.logo; }
-    public void setLogo(byte[] logo) { this.logo = logo; }
+    @Override public void setLogo(byte[] logo) { this.logo = logo; }
 
     private Collection<IParameterDescriptor> parameters;
     @Override public Collection<IParameterDescriptor> getParameters() { return this.parameters; }
-    public void setParameters(Collection<IParameterDescriptor> parameters) { this.parameters = parameters; }
+    @Override public void setParameters(Collection<IParameterDescriptor> parameters) { this.parameters = parameters; }
 
     private Collection<IOutputDescriptor> outputs;
     @Override public Collection<IOutputDescriptor> getOutputs() { return this.outputs; }
-    public void setOutputs(Collection<IOutputDescriptor> outputs) { this.outputs = outputs; }
+    @Override public void setOutputs(Collection<IOutputDescriptor> outputs) { this.outputs = outputs; }
 
     private Collection<IRepositoryDescriptor> repositories;
     @Override public Collection<IRepositoryDescriptor> getRepositories() { return this.repositories; }
-    public void setRepositories(Collection<IRepositoryDescriptor> repositories) { this.repositories = repositories; }
+    @Override public void setRepositories(Collection<IRepositoryDescriptor> repositories) { this.repositories = repositories; }
 
     private Collection<IStepDescriptor> steps;
     @Override public Collection<IStepDescriptor> getSteps() { return this.steps; }
-    public void setSteps(Collection<IStepDescriptor> steps) { this.steps = steps; }
+    @Override public void setSteps(Collection<IStepDescriptor> steps) { this.steps = steps; }
 
 
 

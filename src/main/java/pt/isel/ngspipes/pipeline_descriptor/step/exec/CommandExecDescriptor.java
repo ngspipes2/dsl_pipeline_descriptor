@@ -4,11 +4,11 @@ public class CommandExecDescriptor extends ExecDescriptor  implements ICommandEx
 
     private String toolName;
     @Override public String getToolName() { return this.toolName; }
-    public void setToolName(String toolName) { this.toolName = toolName; }
+    @Override public void setToolName(String toolName) { this.toolName = toolName; }
 
     private String commandName;
     @Override public String getCommandName() { return this.commandName; }
-    public void setCommandName(String commandName) { this.commandName = commandName; }
+    @Override public void setCommandName(String commandName) { this.commandName = commandName; }
 
 
 

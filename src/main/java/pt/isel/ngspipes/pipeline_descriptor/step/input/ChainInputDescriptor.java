@@ -4,11 +4,11 @@ public class ChainInputDescriptor extends InputDescriptor implements IChainInput
 
     private String stepId;
     @Override public String getStepId() { return this.stepId; }
-    public void setStepId(String stepId) { this.stepId = stepId; }
+    @Override public void setStepId(String stepId) { this.stepId = stepId; }
 
     private String outputName;
     @Override public String getOutputName() { return this.outputName; }
-    public void setOutputName(String outputName) { this.outputName = outputName; }
+    @Override public void setOutputName(String outputName) { this.outputName = outputName; }
 
 
 

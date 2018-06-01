@@ -4,11 +4,11 @@ public class ParameterDescriptor implements IParameterDescriptor {
 
     private String name;
     @Override public String getName() { return this.name; }
-    public void setName(String name) { this.name = name; }
+    @Override public void setName(String name) { this.name = name; }
 
     private Object defaultValue;
     @Override public Object getDefaultValue() { return this.defaultValue; }
-    public void setDefaultValue(Object defaultValue) { this.defaultValue = defaultValue; }
+    @Override public void setDefaultValue(Object defaultValue) { this.defaultValue = defaultValue; }
 
 
 

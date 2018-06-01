@@ -4,7 +4,7 @@ public class SimpleInputDescriptor extends InputDescriptor implements ISimpleInp
 
     private Object value;
     @Override public Object getValue() { return this.value; }
-    public void setValue(Object value) { this.value = value; }
+    @Override public void setValue(Object value) { this.value = value; }
 
 
 

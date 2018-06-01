@@ -8,15 +8,15 @@ public class RepositoryDescriptor implements IRepositoryDescriptor {
 
     private String id;
     @Override public String getId() { return this.id; }
-    public void setId(String id) { this.id = id; }
+    @Override public void setId(String id) { this.id = id; }
 
     private String location;
     @Override public String getLocation() { return this.location; }
-    public void setLocation(String location) { this.location = location; }
+    @Override public void setLocation(String location) { this.location = location; }
 
     private Map<String, IValueDescriptor> configuration;
     @Override public Map<String, IValueDescriptor> getConfiguration() { return this.configuration; }
-    public void setConfiguration(Map<String, IValueDescriptor> configuration) { this.configuration = configuration; }
+    @Override public void setConfiguration(Map<String, IValueDescriptor> configuration) { this.configuration = configuration; }
 
 
 

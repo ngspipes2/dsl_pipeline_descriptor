@@ -4,7 +4,7 @@ public class ExecDescriptor implements IExecDescriptor {
 
     private String repositoryId;
     @Override public String getRepositoryId() { return this.repositoryId; }
-    public void setRepositoryId(String repositoryId) { this.repositoryId = repositoryId; }
+    @Override public void setRepositoryId(String repositoryId) { this.repositoryId = repositoryId; }
 
 
 

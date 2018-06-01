@@ -4,7 +4,7 @@ public class PipelineExecDescriptor extends ExecDescriptor implements IPipelineE
 
     private String pipelineName;
     @Override public String getPipelineName() { return this.pipelineName; }
-    public void setPipelineName(String pipelineName) { this.pipelineName = pipelineName; }
+    @Override public void setPipelineName(String pipelineName) { this.pipelineName = pipelineName; }
 
 
 

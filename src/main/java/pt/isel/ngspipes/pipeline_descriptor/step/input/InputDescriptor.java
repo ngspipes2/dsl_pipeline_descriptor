@@ -4,7 +4,7 @@ public class InputDescriptor implements IInputDescriptor {
 
     private String inputName;
     @Override public String getInputName() { return this.inputName; }
-    public void setInputName(String inputName) { this.inputName = inputName; }
+    @Override public void setInputName(String inputName) { this.inputName = inputName; }
 
 
 
