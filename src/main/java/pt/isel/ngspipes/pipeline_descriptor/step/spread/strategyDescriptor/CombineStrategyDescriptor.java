@@ -1,6 +1,6 @@
 package pt.isel.ngspipes.pipeline_descriptor.step.spread.strategyDescriptor;
 
-public class CombineStrategyDescriptor extends StrategyDescriptor implements ICombineStrategyDescriptor {
+public abstract class CombineStrategyDescriptor extends StrategyDescriptor implements ICombineStrategyDescriptor {
 
     private IStrategyDescriptor firstStrategy;
     @Override public IStrategyDescriptor getFirstStrategy() { return this.firstStrategy; }

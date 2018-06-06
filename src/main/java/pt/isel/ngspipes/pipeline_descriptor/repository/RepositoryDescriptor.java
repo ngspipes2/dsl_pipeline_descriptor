@@ -4,7 +4,7 @@ import pt.isel.ngspipes.pipeline_descriptor.repository.value.IValueDescriptor;
 
 import java.util.Map;
 
-public class RepositoryDescriptor implements IRepositoryDescriptor {
+public abstract class RepositoryDescriptor implements IRepositoryDescriptor {
 
     private String id;
     @Override public String getId() { return this.id; }

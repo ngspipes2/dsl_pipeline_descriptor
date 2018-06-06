@@ -1,6 +1,6 @@
 package pt.isel.ngspipes.pipeline_descriptor.step.exec;
 
-public class ExecDescriptor implements IExecDescriptor {
+public abstract class ExecDescriptor implements IExecDescriptor {
 
     private String repositoryId;
     @Override public String getRepositoryId() { return this.repositoryId; }

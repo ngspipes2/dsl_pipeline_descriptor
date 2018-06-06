@@ -18,6 +18,6 @@ public class CommandExecDescriptor extends ExecDescriptor  implements ICommandEx
         this.commandName = commandName;
     }
 
-    public void setCommandName() { }
+    public CommandExecDescriptor() { }
 
 }
