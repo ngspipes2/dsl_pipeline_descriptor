@@ -13,6 +13,6 @@ public class SimpleInputDescriptor extends InputDescriptor implements ISimpleInp
         this.value = value;
     }
 
-    public SimpleInputDescriptor(Object value) { }
+    public SimpleInputDescriptor() { }
 
 }
